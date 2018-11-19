@@ -3,7 +3,7 @@
  * @version 1.0.0
  */
 try {
-	(function(isNaN, isFinite) {
+	(function() {
 		'use strict';
 		
 		/**
@@ -15,7 +15,7 @@ try {
 		window.isInfinity = function(value) {
 			return typeof value === 'number' && !isNaN(value) && !isFinite(value);
 		};
-	})(window.isNaN, window.isFinite);
+	})();
 }catch(e) {
 	console.error(e);
 }
